@@ -323,7 +323,7 @@ mode "$mode_gaps_left" {
 for_window [class=".*"] border pixel 0
 
 gaps inner 20
-gaps outer -4 
+gaps outer -2 
 
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
@@ -359,4 +359,5 @@ bindsym $mod+Ctrl+Shift+k resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+j resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+h resize grow width 9 px or 10 ppt
 
+# change language by shift+alt
 exec_always setxkbmap -model pc104 -layout us,ir  -option grp:alt_shift_toggle
