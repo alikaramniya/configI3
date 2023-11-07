@@ -180,12 +180,14 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+gaps inner 9 
+
 bindsym $mod+r mode "resize"
 
 # Window Colors
 set $color      #2F4F4F
 
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 
 # Alt tab workspace switching
 bindsym Ctrl+Shift+l workspace next
@@ -205,3 +207,7 @@ bindsym $mod+Ctrl+Shift+h resize grow width 9 px or 10 ppt
 
 # change language by shift+alt
 exec_always setxkbmap -model pc104 -layout us,ir  -option grp:alt_shift_toggle
+
+exec_always picom -f
+
+exec nitrogen --restore
