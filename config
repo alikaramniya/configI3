@@ -200,10 +200,10 @@ bindsym $mod+Ctrl+j resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+l resize grow width 1 px or 1 ppt
 
 # Resizing by 10
-bindsym $mod+Ctrl+Shift+h resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+Shift+l resize shrink width 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+k resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+j resize shrink height 10 px or 10 ppt
-bindsym $mod+Ctrl+Shift+l resize grow width 9 px or 10 ppt
+bindsym $mod+Ctrl+Shift+h resize grow width 9 px or 10 ppt
 
 # change language by shift+alt
 exec_always setxkbmap -model pc104 -layout us,ir  -option grp:alt_shift_toggle
